@@ -1,0 +1,131 @@
+﻿<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Semafaro</title>
+</head>
+
+<style>
+    /* mouse over link */
+
+a:link {
+    color:#00FFB3;
+    text-decoration: none;
+}
+a:visited {
+    color: #00FFB3;
+}
+a:hover {
+    color: yellow;
+}
+
+  .menu{
+	padding: 0px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	z-index: auto;
+	top: 70px;	
+   
+  }
+  .menuFonte {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;	
+	color: #00FFB3;
+	background:#000000;
+	text-align:center;
+}
+
+.logomarca {
+	padding: 0px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	z-index: auto;
+	top: 0px;	
+	
+}
+.topo {
+	padding: 0px;
+	height: 50px;
+	width: 310px;
+	position: absolute;
+	z-index: auto;
+	top: 0px;
+	right: 0px;
+	left: 100px;
+}
+.topoFonte {
+	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;	
+	color: red;
+  text-align:right;
+}
+.sinalVermelho{
+    padding: 0px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	z-index: auto;
+	top: 70px;
+	left: 220px;
+  background-color:red;
+}
+
+.sinalVerde{
+    padding: 0px;
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	z-index: auto;
+	top: 140px;
+	left: 220px;
+  background-color:green;
+}
+</style>
+
+<body>
+<div class="logomarca">
+    <img src="https://pbs.twimg.com/profile_images/378800000092669685/3f94b85b94f68c528624de7c8f9138a0_400x400.png" alt="" width="66" height="66" />
+</div>
+ 
+<div class="topo">    
+    <table width="300" border="0" cellpadding="2">
+            <tbody>
+              <tr>
+                <td class="topoFonte" align="right">Semafaro Wifi</td>
+              </tr>
+              <tr>
+                <td class="topoFonte" style="color: blue" >Versão 1.0</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+  
+<div class="menu">    
+<table border="0" width="100" cellpadding="1">
+  <tbody>  
+     <tr>
+        <td class="menuFonte"  width="100" height="25"><a href="relogio.html" target="_parent">relogio</a></td>
+      </tr>
+      <tr bgcolor="#FFFFFF" style="color: #000000">
+        <td  class="menuFonte" width="100" height="25"><a href="semafaro.html" target="_parent">semafaro</a></td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+        <td  class="menuFonte" width="100" height="25"><a href="login.html" target="_parent">login/senha</a></td>
+      </tr>
+      <tr bgcolor="#FFFFFF">
+        <td class="menuFonte" width="100" height="25"><a href="deslogar.html" target="_parent">deslogar</a></td>
+      </tr>
+    <tr bgcolor="#FFFFFF">
+        <td class="menuFonte" width="100" height="25"><a href="deslogar.html" target="_parent">ajuda</a></td>
+      </tr>
+    </tbody>
+  </table>  
+  </div>
+<div class="sinalVermelho"></div>
+<div class="sinalVerde"></div>
+
+</body>
+
+</html>
