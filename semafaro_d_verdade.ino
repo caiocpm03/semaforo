@@ -94,13 +94,10 @@ void loop() {
 }
 String css (){
   String Buf = "";
-}
 
 Buf +="<html>";
-
 Buf +="<head>";
 Buf +="<meta charset=\"utf-8\"><title>Semafaro</title></head>";
-
 Buf +="<style>";
     //* mouse over link */
 Buf +="a:link { color:#00FFB3;text-decoration: none;}a:visited {color: #00FFB3;}a:hover {";
@@ -114,53 +111,61 @@ Buf +="top: 165px; left: 220px; background-color:green;}.botVermelho{ border: no
 Buf +=".botAmarelo{ border: none; height:40px; width: 40px; position: absolute; z-index: auto; top: 123px; left: 300px; cursor: pointer; background-color:yellow;}";
 Buf +=".botVerde{ border: none; cursor: pointer; height: 40px; width: 40px; position: absolute; z-index: auto; top: 172px; left: 300px; background-color:green;}";
 Buf +=".OFFline{ opacity:0.6; cursor: not-allowed;}</style>"
+ return Buf;
+}
 
-<body>
-<div class="logomarca">
-    <img src="https://pbs.twimg.com/profile_images/378800000092669685/3f94b85b94f68c528624de7c8f9138a0_400x400.png" alt="" width="66" height="66" />
-</div>
+String semafaro (){
+  String Buf= "";
+  Buf +="<body>";
+Buf +="<div class=\"logomarca\">";
+    Buf +="<img src=\"https://pbs.twimg.com/profile_images/378800000092669685/3f94b85b94f68c528624de7c8f9138a0_400x400.png\" alt=\"\" width=\"66\" height=\"66\" />";
+Buf +="</div>";
  
-<div class="topo">    
-    <table width="300" border="0" cellpadding="2">
-            <tbody>
-              <tr>
-                <td class="topoFonte" align="right">Semafaro Wifi</td>
-              </tr>
-              <tr>
-                <td class="topoFonte" style="color: blue" >Versão 1.0</td>
-              </tr>
-            </tbody>
-          </table>
-    </div>
+Buf +="<div class=\"topo\">";    
+    Buf +="<table width=\"300\" border=\"0\" cellpadding=\"2\">";
+            Buf +="<tbody>";
+              Buf +="<tr>";
+                Buf +="<td class=\"topoFonte\" align=\"right\">Semafaro Wifi</td>";
+              Buf +="</tr>";
+              Buf +="<tr>";
+                Buf +="<td class=\"topoFonte\" style=\"color: blue\" >Versão 1.0</td>";
+              Buf +="</tr>";
+            Buf +="</tbody>";
+          Buf +="</table>";
+    Buf +="</div>";
   
-<div class="menu">    
-<table border="0" width="100" cellpadding="1">
-  <tbody>  
-     <tr>
-        <td class="menuFonte"  width="100" height="25"><a href="relogio.html" target="_parent">relogio</a></td>
-      </tr>
-      <tr bgcolor="#FFFFFF" style="color: #000000">
-        <td  class="menuFonte" width="100" height="25"><a href="semafaro.html" target="_parent">semafaro</a></td>
-      </tr>
-      <tr bgcolor="#FFFFFF">
-        <td  class="menuFonte" width="100" height="25"><a href="login.html" target="_parent">login/senha</a></td>
-      </tr>
-      <tr bgcolor="#FFFFFF">
-        <td class="menuFonte" width="100" height="25"><a href="deslogar.html" target="_parent">deslogar</a></td>
-      </tr>
-    <tr bgcolor="#FFFFFF">
-        <td class="menuFonte" width="100" height="25"><a href="deslogar.html" target="_parent">ajuda</a></td>
-      </tr>
-    </tbody>
-  </table>  
-  </div>
-<div class="sinalVermelho"></div>
-<div class="sinalAmarelo"></div>
-<div class="sinalVerde"></div>
-<div class="botVermelho"><a href="semafaro_vermelho.html" target="_parent">vermelho</a></div>
-<div class="botAmarelo"><a href="semafaro_amarelo.html" target="_parent">amarelo</a></div>
-<div class="botVerde"><a href="semafaro_verde.html" target="_parent">verde</a></div>
+Buf +="<div class=\"menu\">";    
+Buf +="<table border=\"0\" width=\"100\" cellpadding=\"1\">";
+  Buf +="<tbody>";  
+     Buf +="<tr>";
+        Buf +="<td class=\"menuFonte\"  width=\"100\" height=\"25\"><a href=\"relogio.html\" target=\"_parent\">relogio</a></td>";
+      Buf +="</tr>";
+      Buf +="<tr bgcolor=\"#FFFFFF\" style=\"color: #000000\">";
+        Buf +="<td  class=\"menuFonte\" width=\"100\" height=\"25\"><a href=\"semafaro.html\" target=\"_parent\">semafaro</a></td>";
+      Buf +="</tr>";
+      Buf +="<tr bgcolor=\"#FFFFFF\">";
+        Buf +="<td  class=\"menuFonte\" width=\"100\" height=\"25\"><a href=\"login.html\" target=\"_parent\">login/senha</a></td>";
+      Buf +="</tr>";
+      Buf +="<tr bgcolor=\"#FFFFFF\">";
+        Buf +="<td class=\"menuFonte\" width=\"100\" height=\"25\"><a href=\"deslogar.html\" target=\"_parent\">deslogar</a></td>";
+      Buf +="</tr>";
+    Buf +="<tr bgcolor=\"#FFFFFF\">";
+        Buf +="<td class=\"menuFonte\" width=\"100\" height=\"25\"><a href=\"deslogar.html\" target=\"_parent\">ajuda</a></td>";
+      Buf +="</tr>"
+    Buf +="</tbody>";
+  Buf +="</table>";  
+  Buf +="</div>";
+Buf +="<div class=\"sinalVermelho\"></div>";
+Buf +="<div class=\"sinalAmarelo\"></div>";
+Buf +="<div class=\"sinalVerde\"></div>";
+Buf +="<div class=\"botVermelho\"><a href=\"semafaro_vermelho.html\" target=\"_parent\">vermelho</a></div>";
+Buf +="<div class=\"botAmarelo\"><a href=\"semafaro_amarelo.html\" target=\"_parent\">amarelo</a></div>";
+Buf +="<div class=\"botVerde\"><a href=\"semafaro_verde.html\" target=\"_parent\">verde</a></div>";
 
-</body>
+Buf +="</body>";
 
-</html>
+Buf +="</html>";
+ return Buf;
+}
+
+
